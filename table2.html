@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Nested Tables</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 50px;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        table {
+            border: 2px solid green;
+            margin: 20px auto;
+        }
+
+        table table {
+            border: 2px solid blue;
+            margin: 10px auto;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Practice</h2>
+    <p><b>Nested tables</b></p>
+
+    <table border="2">
+        <tr>
+            <td>Main Table row 1 column 1</td>
+            <td>Main Table row 1 column 2
+                <table border="2">
+                    <tr>
+                        <td>Inner Table row 1 column 1</td>
+                        <td>
+                            <table border="2">
+                                <tr>
+                                    <td>Inner Inner Table 1</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Inner Table row 2 column 1</td>
+                        <td>
+                            <table border="2">
+                                <tr>
+                                    <td>Inner Inner Table 2</td>
+                                    <td>
+                                        <table border="2">
+                                            <tr>
+                                                <td>Inner Inner Inner Nested Table 1</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Inner Table row 3 column 1</td>
+                        <td>Inner Table row 3 column 2</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Main Table row 2 column 1</td>
+            <td>Main Table row 2 column 2
+                <table border="2">
+                    <tr>
+                        <td>Inner Table 2 row 1</td>
+                        <td>
+                            <table border="2">
+                                <tr>
+                                    <td>Inner Inner Nested Table 3</td>
+                                    <td>
+                                        <table border="2">
+                                            <tr>
+                                                <td>Inner Inner Nested Table 2</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
